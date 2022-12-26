@@ -88,9 +88,9 @@ Targets & testing
 
 The codebase is targeted and tested against:
 
-* Django 2.2.x against Python 3.5, 3.6, 3.7, 3.8
-* Django 3.0.x against Python 3.6, 3.7, 3.8
-* Django 3.1.x against Python 3.6, 3.7, 3.8
+* Django 3.2.x against Python 3.7, 3.8, 3.9, 3.10
+* Django 4.0.x against Python 3.8, 3.9, 3.10
+* Django 4.1.x against Python 3.8, 3.9, 3.10
 
 To run the tests against all target environments, install `tox
 <https://testrun.org/tox/latest/>`_ and then execute the command::
@@ -129,8 +129,7 @@ reviewed and make it into the project:
   branches.
 
 Code contributions are expected to pass in all target environments, and
-pull requests should be made from branches with passing builds on `Travis
-CI <https://travis-ci.org/bennylope/django-organizations>`_.
+pull requests should be made from branches with passing builds on `GitHub Actions <https://github.com/bennylope/django-organizations/actions/workflows/test.yml>`_.
 
 Project goals
 -------------
@@ -209,7 +208,7 @@ Alternative:
     ORGS_SLUGFIELD = 'autoslug.fields.AutoSlugField'
 
 Previous versions allowed you to specify an `ORGS_TIMESTAMPED_MODEL` path. This
-is now ignored and the functionality satisifed by a vendored solution. A
+is now ignored and the functionality satisfied by a vendored solution. A
 warning will be given but this *should not* have any effect on your code.
 
 - `django-extensions <http://django-extensions.readthedocs.org/en/latest/>`_
